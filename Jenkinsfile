@@ -13,6 +13,13 @@ pipeline {
             }
         }
     
+     stage('Branche'){
+	agent any
+	steps{
+		echo "main"
+	}
+
+    }
      stage('Test') {
             agent {
                 docker {
